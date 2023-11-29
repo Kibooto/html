@@ -9,6 +9,13 @@
     <link rel="icon" href="./img/icon_w.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./img/icon_w.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -41,26 +48,27 @@
 
 
     <main>
-        <h1>РЕЄСТРАЦІЯ</h1>
-        <form>
-            <label for="date">Дата та час:</label>
-            <input type="datetime-local" name="date" required><br><br>
+        <div class="registration-container">
+          <h1>РЕЄСТРАЦІЯ</h1>
+          <form class="reg-form">
+              <label for="date">Дата та час:</label>
+              <input class="date-time-input" type="datetime-local" name="date" required>
 
-            <label for="occasion">Тематика :</label>
-            <select name="occasion">
-                <option value="minimalizm">Мінімалізм</option>
-                <option value="typografic">Типографська орієнтованість</option>
-                <option value="asumetria">Асиметрія</option>
-                <option value="other">Інше</option>
-            </select><br><br>
+              <label for="occasion">Тематика :</label>
+              <select name="occasion">
+                  <option value="minimalizm">Мінімалізм</option>
+                  <option value="typografic">Типографська орієнтованість</option>
+                  <option value="asumetria">Асиметрія</option>
+                  <option value="other">Інше</option>
+              </select>
 
-            <label for="contact_method">Вкажiть номер телефону для зв'язку з нами:</label>
-            <input type="text" name="contact_method" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-                placeholder="xxx xxx xxxx"><br><br>
-                <!--Button must be-->
-            <input type="submit" value="Забронювати">
-
-        </form>
+              <label for="contact_method">Вкажiть номер телефону для зв'язку з нами:</label>
+              <input type="text" name="contact_method" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                  placeholder="xxx xxx xxxx">
+                  <!--Button must be-->
+              <button type="submit">Забронювати</button>
+          </form>
+        </div>
     </main>
     <footer class="footer">
         

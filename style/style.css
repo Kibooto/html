@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -629,3 +631,130 @@ section {
 }
 
 
+
+
+
+
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.registration-container h1 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-align: center;
+    color: var(--color-h);
+    margin-bottom: 50px;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: max-content;
+    gap: 20px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.reg-form:hover {
+    border: 1px solid #2196F3;
+}
+
+.reg-form label {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--color-h);
+}
+
+.reg-form input {
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    padding: 15px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--color-p);
+}
+
+.reg-form input:focus {
+    border-color: #2196F3;
+}
+
+.reg-form input::placeholder {
+    color: #0000006a;
+}
+
+.date-time-input {
+    display: flex;
+    gap: 20px;
+}
+
+.reg-form select {
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    padding: 15px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--color-p);
+    background-color: #fff;
+}
+
+.reg-form select:focus {
+    border-color: #2196F3;
+}
+
+.reg-form select::placeholder {
+    color: #0000006a;
+}
+
+select option {
+    color: #0000006a;
+}
+
+.reg-form button {
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    color: var(--color-footer-info);
+    background-color:  var(--color-background);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reg-form button:hover {
+    background-color: #2196F3;
+}
+
+.reg-form button:focus {
+    outline: none;
+}
